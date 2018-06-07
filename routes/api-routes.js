@@ -9,4 +9,5 @@ ROUTER.get('/', API_CONTROLLER.total);
 ROUTER.post('/burgers', API_CONTROLLER.new);
 ROUTER.delete("/burgers/:id", API_CONTROLLER.destroy);
 ROUTER.put("/burgers/:id", API_CONTROLLER.change);
+ROUTER.put("/burgers/nameChange/:id", API_CONTROLLER.nameChange);
 module.exports = ROUTER;
