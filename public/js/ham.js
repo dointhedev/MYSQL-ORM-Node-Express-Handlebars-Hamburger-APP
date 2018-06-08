@@ -13,7 +13,6 @@ $(document).ready(function () {
 
 function addBurger(){
   event.preventDefault();
-  console.log('inclick');
   $("#results-modal").modal("toggle");
 }
 
@@ -44,19 +43,20 @@ function createBurger(){
         data: newBurger
       }).then(
         function () {
+          $("#results-modal").modal("toggle");
           console.log("created new burger");
           $("#success").removeClass('hide d-none').addClass('show');
           // Reload the page to get the updated list
           setTimeout(() => {
             location.reload();
-          }, 4000);
+          }, 2000);
         }
       );
     } else {
       $("#problem").removeClass('hide d-none').addClass('show');
       setTimeout(() => {
         $("#problem").removeClass('show').addClass('hide d-none');
-      }, 3000);
+      }, 2000);
     }
   }
 
@@ -73,7 +73,7 @@ function deleteBurger(){
         // Reload the page to get the updated list
         setTimeout(() => {
           location.reload();
-        }, 2000);
+        }, 1000);
       }
     );
   }
