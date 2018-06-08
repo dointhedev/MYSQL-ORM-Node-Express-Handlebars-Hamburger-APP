@@ -9,7 +9,7 @@ This app allows you to add, edit update and delete hamburgers of your choice wit
 
 To view demo click on this link: ([Heroku Demo Link](https://whispering-mesa-65164.herokuapp.com/))
 
-# Getting started Locally 
+# Getting Started Locally 
 
 To get the Node server running locally:
 
